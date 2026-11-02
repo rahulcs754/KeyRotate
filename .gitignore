@@ -1,0 +1,13 @@
+node_modules/
+coverage/
+
+# Repo guard: never commit these (see .github/scripts/repo-guard.sh)
+CLAUDE.md
+.claude/
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+.npmrc

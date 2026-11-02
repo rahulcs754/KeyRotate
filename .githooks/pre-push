@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Runs the repo guard before every push. Enable once: git config core.hooksPath .githooks
+exec "$(git rev-parse --show-toplevel)/.github/scripts/repo-guard.sh"

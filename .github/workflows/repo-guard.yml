@@ -1,0 +1,16 @@
+name: Repo guard
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Block CLAUDE.md, .env, keys and secrets
+        run: bash .github/scripts/repo-guard.sh
