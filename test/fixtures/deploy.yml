@@ -1,0 +1,11 @@
+name: deploy
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npx vercel deploy --token ${{ secrets.VERCEL_TOKEN }}
+        env:
+          GH: ${{ secrets.GITHUB_TOKEN }}
+          KEY: ${{ secrets['OPENAI_API_KEY'] }}
+          NPM: ${{secrets.NPM_TOKEN}}
