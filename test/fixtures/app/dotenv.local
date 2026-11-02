@@ -1,0 +1,11 @@
+# local dev
+export OPENAI_API_KEY=sk-proj-local-not-real
+DATABASE_URL="postgres://app:pw@localhost:5432/app"
+STRIPE_SECRET_KEY='sk_test_notreal000000'
+NEXTAUTH_SECRET=abc123 # inline comment
+NODE_ENV=development
+PORT=3000
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiJ9.public
+PRIVATE_KEY="-----BEGIN TEST KEY-----
+line2
+-----END TEST KEY-----"

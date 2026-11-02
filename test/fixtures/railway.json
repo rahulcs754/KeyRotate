@@ -1,0 +1,1 @@
+{ "DATABASE_URL": "postgres://u:p@db.railway.internal:5432/railway", "RAILWAY_ENVIRONMENT": "production", "RAILWAY_TOKEN": "", "ANTHROPIC_API_KEY": "placeholder" }
